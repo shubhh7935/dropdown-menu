@@ -1,0 +1,33 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown > .dropdown-text {
+    padding: 10px 20px;
+}
+.dropdown > input {
+    top: 0;
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.dropdown > input:checked + .dropdown-container {
+    transform: scaleY(1);
+}
+.dropdown > .dropdown-container {
+    transform: scaleY(0);
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+.dropdown > .dropdown-container > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+}
